@@ -1,4 +1,4 @@
-# cek apakah waktu sudah sinkron
+## cek apakah waktu sudah sinkron
 ```
 timedatectl status
 ```
@@ -17,4 +17,18 @@ System clock synchronized: yes
 
 ```
 sudo timedatectl set-ntp true
+```
+## pindah ke direktori /opt 
+```
+cd /opt
+```
+
+## unduh repositori resmi
+```
+sudo git clone https://github.com/mailcow/mailcow-dockerized
+```
+
+## Masuk ke folder yang baru saja diunduh
+```
+cd mailcow-dockerized
 ```
