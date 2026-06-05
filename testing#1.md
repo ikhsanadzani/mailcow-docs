@@ -32,3 +32,16 @@ sudo git clone https://github.com/mailcow/mailcow-dockerized
 ```
 cd mailcow-dockerized
 ```
+
+## Jalankan otomasi skrip bawaan dari mailcow
+```
+sudo ./generate_config.sh
+```
+### output:
+```
+Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.
+Cannot find Docker with a Version higher or equals 24.0.0
+mailcow needs a newer Docker version to work properly...
+Please update your Docker installation... exiting
+```
+> peringatan dari Podman tersebut merusak proses pembacaan variabel oleh skrip
