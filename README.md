@@ -23,6 +23,7 @@ Kemudahan yang diberikan mailcow adalah mailcow ui, yaitu antarmuka berbasis web
 - podman-docker
 
 ## container apa saja yang dibutuhkan
+### If there is a firewall, unblock the following ports for incoming connections:
 
 | Service             | Protocol | Port   | Container       | Variable                         |
 | ------------------- | -------- | ------ | --------------- | -------------------------------- |
