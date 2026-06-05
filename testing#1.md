@@ -92,4 +92,12 @@ sudo nvim /etc/hosts
 127.0.0.1  mail.lokal.dev
 ```
 
+#### Pilihan setelah di generate ulang
+
+Setelah langkah ini, skrip biasanya hanya akan meminta dua hal lagi:
+
+ - Timezone: Ketik Asia/Jakarta (lalu Enter).
+
+ -   Branch: Pilih opsi 1 (master) untuk versi yang lebih stabil.
+
 
