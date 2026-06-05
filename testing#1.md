@@ -73,3 +73,23 @@ fi
 ```
 sudo ./generate_config.sh
 ```
+- output:
+```
+Detecting if your IP is listed on Spamhaus Bad ASN List...
+Check completed! Your IP is clean
+Press enter to confirm the detected value '[value]' where applicable or enter a custom value.
+Mail server hostname (FQDN) - this is not your mail domain, but your mail servers hostname: 
+```
+> disini saya hanya menggunakan untuk testing, maka domain yang digunakan adalah dummy domain, berikut cara konfiguarasi nya:
+
+```
+sudo nvim /etc/hosts
+```
+
+> lalu tambahkan baris baru di file tersebut
+- contoh:
+```
+127.0.0.1  mail.lokal.dev
+```
+
+
