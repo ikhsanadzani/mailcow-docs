@@ -37,7 +37,7 @@ cd mailcow-dockerized
 ```
 sudo ./generate_config.sh
 ```
-### output:
+### output dari command diatas:
 ```
 Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.
 Cannot find Docker with a Version higher or equals 24.0.0
@@ -45,3 +45,31 @@ mailcow needs a newer Docker version to work properly...
 Please update your Docker installation... exiting
 ```
 > peringatan dari Podman tersebut merusak proses pembacaan variabel oleh skrip
+
+## solving
+> disini saya mengkonfigurasi beberapa file agar bisa by pass error tersebut
+
+### bisukan peringatan emulasi Podman
+```
+sudo touch /etc/containers/nodocker
+```
+
+### pangkas pengecekan versi di skrip
+```
+sudo nvim generate_config.sh
+```
+#### Lalu commanding bagian ini
+```
+if [ "$DOCKER_VERSION" -lt 240000 ]; then
+    echo "Cannot find Docker with a Version higher or equals 24.0.0"
+    echo "mailcow needs a newer Docker version to work properly..."
+    echo "Please update your Docker installation... exiting"
+    exit 1
+fi
+```
+> semua di commanding
+
+#### lalu generate ulang
+```
+sudo ./generate_config.sh
+```
